@@ -83,6 +83,63 @@
         <dd>지구는 거대한 순댓국밥임</dd> <!-- dd: definition description 약자 ('정의 설명'라는 뜻) -->
     </dl>
     <!-- #endregion -->
+
+    <!-- #region table -->
+    <p>이래보여도 표임</p>
+    
+    <!-- 테이블 -->
+    <table>
+        <!-- table row의 약자. 그러니깐 Row()랑 비슷한거임. 요 안에 들어간 요소는 다 가로로 배치됨 -->
+        <tr>
+            <!-- table data의 약자. 걍 테이블에 들어갈 데이터. -->
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+
+        <!-- table row. table 태그는 Column() 속성인듯?-->
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+
+    <p>이건 Table Tags를 사용한 표임</p>
+
+    <!-- 테이블, 테두리를 1만큼 설정 -->
+    <table border="1">
+
+    <!-- table head, 테이블 대가리. 보통 각 항목의 제목을 넣음 -->
+    <thead>
+        <tr>
+            <th>품목</th>
+            <th>가격</th>
+        </tr>
+    </thead>
+
+    <!-- table body, 테이블 몸뚱아리. 실제로 들어갈 데이터 표기 -->
+    <tbody>
+        <tr>
+            <td>사과</td>
+            <td>1,000원</td>
+        </tr>
+        <tr>
+            <td>우유</td>
+            <td>2,000원</td>
+        </tr>
+    </tbody>
+
+    <!-- table foot, 테이블 발바닥. 보통 결과같은거 표기하는데 씀 -->
+    <tfoot>
+        <tr>
+            <th>총 합계</th>
+            <td>3,000원</td>
+        </tr>
+    </tfoot>
+</table>
+
 </body>
 
 </html>
