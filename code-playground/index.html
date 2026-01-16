@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>놀이터</title>
+    <style>
+        table, th, td {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+
+        th, td { padding: 10px 20px; text-align: center;}
+    </style>
+</head>
+<body>
+    <a href="../index.html">홈으로 돌아가기</a>
+
+    <br/><br/>
+
+    <table>
+        <caption>상품 구성</caption>
+        <colgroup>
+            <col style="background-color: #f2f2f2;">
+            <col span="2">
+            <col style="width: 150px;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>등급</th>
+                <th>생산년도</th>
+                <th>국밥</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td rowspan="2">1등급</td>
+                <td>2005년산</td>
+                <td>3개</td>
+                <td>20,000원</td>
+            </tr>
+            <tr>
+                <td>2001년산</td>
+                <td>5개</td>
+                <td>31,000원</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2등급</td>
+                <td>1920년산</td>
+                <td>3개</td>
+                <td>22,100원</td>
+            </tr>
+            <tr>
+                <td>1918년산    </td>
+                <td>5개</td>
+                <td>24,000원</td>
+            </tr>    
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4" style="text-align: center;">모든 상품은 돼지국밥 포함입니다</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
