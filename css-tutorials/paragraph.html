@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        #text-decoration {
+            text-decoration: underline;
+        }
+        
+        #word-spacing {
+            word-spacing: 20px;
+        }
+
+        #text-shadow {
+            text-shadow: 2px 2px 5px gray;
+        }
+
+        #border {
+            border: 2px solid black;
+        }
+
+        #border-radius {
+            border: 2px solid black;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -13,8 +33,18 @@
     <br>
     <p contenteditable="true">이건 수정할 수 있는 텍스트임</p>
     <p hidden>히히 안보이지롱</p>
+    <br>
     <p draggable="true">이건 드래그가 안되는 텍스트임</p>
     <p onclick="alert('ㅇㅂㅇ')">클릭하면 alert가 작동되는 텍스트</p>
     <p onmouseover="alert('마우스 올렸다!')">마우스 호버하면 alert가 작동되는 텍스트, 웹페이지 가로로 쭉 요놈 영역이라 빈 공간에 호버해도 alert가 작동됨</p>
+    <br><br>
+    <p id="text-decoration">이건 밑줄 있는 텍스트</p>
+    <p id="word-spacing">이건 단어 사이 간격이 20px인 텍스트</p>
+    <p id="text-shadow">이건 그림자 있는 텍스트</p>
+    <p id="border">이건 테두리가 있는 텍스트</p>
+    <p id="border-radius">이건 테두리가 둥근 텍스트</p>
+    <p></p>
+    <p></p>
+    
 </body>
 </html>
