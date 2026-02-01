@@ -14,6 +14,31 @@
             display: flex;
             flex-direction: row;
         }
+
+        #Row-MainAxisAlignment-Center {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        #Row-MainAxisAlignment-SpaceBetween {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        #Row-MainAxisAlignment0-spaceAround {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        #Row-MainAxisAlignment0-spaceEvenly {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
     </style>
 </head>
 <body>
@@ -32,6 +57,40 @@
         <p>배치하기</p>
         <p>flutter Row()</p>    
     </div>
-    
+
+    <div id="Row-MainAxisAlignment-Center">
+        <p>내부</p>
+        <p>요소들을</p>
+        <p>가로로</p>
+        <p>중앙 정렬하기</p>
+        <p>flutter MainAxisAlignment.center</p>
+    </div>
+
+    <!-- [요소]__[요소]__[요소] -->
+    <div id="Row-MainAxisAlignment-SpaceBetween">
+        <p>내부</p>
+        <p>요소들을</p>
+        <p>가로로</p>
+        <p>양 끝 정렬하기</p>
+        <p>flutter MainAxisAlignment.spaceBetween</p>
+    </div>
+
+    <!-- _[요소]__[요소]__[요소]_ -->
+    <div id="Row-MainAxisAlignment0-spaceAround">
+        <p>내부</p>
+        <p>요소들을</p>
+        <p>가로로</p>
+        <p>간격 균등 배치하기</p>
+        <p>flutter MainAxisAlignment.spaceAround</p>
+    </div>
+
+    <!-- __[요소]__[요소]__[요소]__ -->
+    <div id="Row-MainAxisAlignment0-spaceEvenly">
+        <p>내부</p>
+        <p>요소들을</p>
+        <p>가로로</p>
+        <p>간격 균등 배치하기</p>
+        <p>flutter MainAxisAlignment.spaceEvenly</p>
+    </div>
 </body>
 </html>
