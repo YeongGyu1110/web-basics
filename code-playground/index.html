@@ -1,70 +1,75 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>놀이터</title>
+    <title>Document</title>
     <style>
-        table, th, td {
-            border: 1px solid #ccc;
-            border-collapse: collapse;
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
         }
 
-        th, td { padding: 10px 20px; text-align: center;}
+        .container {
+            width: 200px;
+            height: 200px;
+            border: 4px black solid;
+            background-color: white;   
+        }
+
+        .element {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+
+
+
+        #top-left {
+            display: flex;
+            flex-direction: row;
+            justify-content: start; /*mainAxisAlignment*/
+            align-items: start; /*crossAxisAlignemt*/
+        }
+
+        #top-right {
+            display: flex;
+            flex-direction: row;
+            justify-content: end; /*mainAxisAlignment*/
+            align-items: start; /*crossAxisAlignemt*/
+        }
+
+        #bottom-left {
+            display: flex;
+            flex-direction: row;
+            justify-content: start; /*mainAxisAlignment*/
+            align-items: end; /*crossAxisAlignemt*/
+        }
+
+        #bottom-right {
+            display: flex;
+            flex-direction: row;
+            justify-content: end; /*mainAxisAlignment*/
+            align-items: end; /*crossAxisAlignemt*/
+        }
+
+
     </style>
 </head>
 <body>
-    <a href="../index.html">홈으로 돌아가기</a>
-
-    <br/><br/>
-
-    <table>
-        <caption>상품 구성</caption>
-        <colgroup>
-            <col style="background-color: #f2f2f2;">
-            <col span="2">
-            <col style="width: 150px;">
-        </colgroup>
-        <thead>
-            <tr>
-                <th>등급</th>
-                <th>생산년도</th>
-                <th>국밥</th>
-                <th>가격</th>
-            </tr>
-        </thead>
-        
-        <tbody>
-            <tr>
-                <td rowspan="2">1등급</td>
-                <td>2005년산</td>
-                <td>3개</td>
-                <td>20,000원</td>
-            </tr>
-            <tr>
-                <td>2001년산</td>
-                <td>5개</td>
-                <td>31,000원</td>
-            </tr>
-            <tr>
-                <td rowspan="2">2등급</td>
-                <td>1920년산</td>
-                <td>3개</td>
-                <td>22,100원</td>
-            </tr>
-            <tr>
-                <td>1918년산    </td>
-                <td>5개</td>
-                <td>24,000원</td>
-            </tr>    
-        </tbody>
-
-        <tfoot>
-            <tr>
-                <td colspan="4" style="text-align: center;">모든 상품은 돼지국밥 포함입니다</td>
-            </tr>
-        </tfoot>
-    </table>
+    <div class="container" id="top-left">
+        <div class="element"></div>
+    </div>
+    <div class="container" id="top-right">
+        <div class="element"></div>
+    </div>
+    <div class="container" id="bottom-left">
+        <div class="element"></div>
+    </div>
+    <div class="container" id="bottom-right">
+        <div class="element"></div>
+    </div>
 
 </body>
 </html>
