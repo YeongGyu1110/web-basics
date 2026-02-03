@@ -7,23 +7,28 @@
     <style>
         body {
             display: flex;
+            flex-direction: column;
+        }
+        
+        .row {
+            display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: space-evenly;    
         }
 
         .container {
             width: 200px;
             height: 200px;
             border: 4px black solid;
-            background-color: white;   
+            background-color: white;
+            margin-bottom: 80px;
         }
 
         .element {
             background-color: red;
             width: 100px;
             height: 100px;
-        }
-
+        }        
 
 
         #top-left {
@@ -55,20 +60,60 @@
         }
 
 
+        #top {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #bottom {
+            display: flex;
+            flex-direction: row;
+            align-items: end;
+        }
+                
+        #left {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #right {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+        }
+
     </style>
 </head>
 <body>
-    <div class="container" id="top-left">
-        <div class="element"></div>
+
+    <div class="row">
+        <div class="container" id="top-left">
+            <div class="element"></div>
+        </div>
+        <div class="container" id="top-right">
+            <div class="element"></div>
+        </div>
+        <div class="container" id="bottom-left">
+            <div class="element"></div>
+        </div>
+        <div class="container" id="bottom-right">
+            <div class="element"></div>
+        </div>
     </div>
-    <div class="container" id="top-right">
-        <div class="element"></div>
-    </div>
-    <div class="container" id="bottom-left">
-        <div class="element"></div>
-    </div>
-    <div class="container" id="bottom-right">
-        <div class="element"></div>
+
+    <div class="row">
+        <div class="container" id="top">
+            <div class="element" style="width: 200px;"></div>
+        </div>
+        <div class="container" id="bottom">
+            <div class="element" style="width: 200px;"></div>
+        </div>
+        <div class="container" id="left">
+            <div class="element" style="height: 200px;"></div>
+        </div>
+        <div class="container" id="right">
+            <div class="element" style="height: 200px;"></div>
+        </div>
     </div>
 
 </body>
